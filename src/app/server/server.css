@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#status {
+    font-size: 20;
+    font-weight: bold;
+}
+
+#substatus {
+    font-size: 14;
+}
+
+#session-key {
+    font-size: 14;
+}

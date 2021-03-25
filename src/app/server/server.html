@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="server.css">
+    <title>VPN</title>
+</head>
+<body>
+    <h1>Server</h1>
+    <form id="input-form">
+        Port: 
+        <br />
+        <input id="input-port" type="text">
+        <br />
+        Secret Key: 
+        <br />
+        <input id="input-key" type="text">
+        <br />
+    </form>
+    <button id="start-button" onClick="submitInput()">Start</button>
+    <br />
+    <button id="continue-button" disabled="true" onClick="submitContinue()">Continue</button>
+    <button id="skip-button" disabled="true" onClick="submitSkip()">Skip</button>
+    <h2>Incoming Connection Log</h2> 
+    <p id="status">...</p>
+    <p id="substatus">...</p>
+    <h2>Session Key</h2>
+    <p id="session-key">...</p>
+    <h2>Last Message Received</h2>
+    <label for="encrypted-msg">Encrypted: </label>
+    <p id="message-encrypted">...</p>
+    <label for="decrypted-msg">Decrypted: </label>
+    <p id="message-decrypted">...</p>
+    <h2>Send Message</h2>
+    <form>
+        Message:
+        <br />
+        <input id="message-text" type="text">
+        <br />
+    </form>
+    <button id="send-button" onClick="submitMessage()">Send</button>
+    <script src="server.js"></script>
+</body>
+</html>

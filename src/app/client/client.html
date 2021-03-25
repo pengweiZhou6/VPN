@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VPN</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+<h1>Client</h1>
+<form id="form">
+    <label for="IP">IP address :</label><br>
+    <input type="text" id="IP" name="IP"><br>
+    <label for="port">Port:</label><br>
+    <input type="number" id="port" name="port"><br>
+    <label for="secret">Secret Key :</label><br>
+    <input type="text" id="secret" name="secretKey">
+    <br>
+    <input type="submit" value="Start" id="start">
+</form>
+<button id="continue-button" disabled="true" onClick="submitContinue()">Continue</button>
+<button id="skip-button" disabled="true" onClick="submitSkip()">Skip</button>
+<h2>Incoming Connection Log</h2>
+<p id="connectionStatus">...</p>
+<p id="connectionSubStatus">...</p>
+<h2>Session Key</h2>
+<p id="session-key">...</p>
+<h2>Last Message Received</h2>
+<label for="encrypted-msg">Encrypted: </label>
+<p id="message-encrypted">...</p>
+<label for="decrypted-msg">Decrypted: </label>
+<p id="message-decrypted">...</p>
+<h2>Send Message</h2>
+<form id="sendForm">
+    <label for="msg">Message:</label><br>
+    <input type="text" id="msg" name="msg"><br><br>
+    <input type="submit" value="Send">
+</form>
+<p id="msgStatus"></p>
+<p id="msgSubStatus"></p>
+<script src="client.js"></script>
+</body>
+</html>
